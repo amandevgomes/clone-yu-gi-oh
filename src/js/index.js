@@ -42,10 +42,11 @@ btnVoltar.addEventListener("click", function () {
 
 cartoes.forEach(cartao => {
     cartao.addEventListener("click", function() {
-        const cartaVirada = cartao.querySelectorAll(".carta-virada");
-
+        const cartaVirada = cartao.querySelector(".carta-virada");
         //virar o cartão
+
         cartao.classList.toggle("virar");
+
         //mostrar o fundo da carta
         cartaVirada.classList.toggle("mostrar-fundo-carta");
 
